@@ -44,7 +44,7 @@ pipeline {
                     steps {
                         build(job: 'jiveX-build-branch',
                                 parameters: [ string(name: 'BRANCH_NAME', value: env.BRANCH_NAME ?: "") ],
-                                wait: false)
+                                wait: true)
                     }
                 }
 
