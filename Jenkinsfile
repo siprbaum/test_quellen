@@ -31,6 +31,7 @@ pipeline {
                                 parameters: [
                                 string(name: 'BRANCH_NAME', value: env.BRANCH_NAME ?: ""),
                                 string(name: 'CHANGE_ID', value: env.CHANGE_ID ?: ""),
+                                string(name: 'CHANGE_BRANCH', value: env.CHANGE_BRANCH ?: ""),
                                 string(name: 'CHANGE_TARGET', value: env.CHANGE_TARGET ?: "")
                                 ])
                     }
